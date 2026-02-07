@@ -25,7 +25,7 @@ Projelerimde ağırlıklı olarak aşağıdaki dilleri ve araçları kullandım:
 │   │   ├── Veri Yapıları
 │   │   ├── Veritabanı Yönetim Sistemleri
 │   └── Bahar Dönemi 
-│       ├── Programlama Dilleri
+│       ├── Programlama Dillerinin Prensipleri
 │
 ├── 📁 3. Sınıf
 │   ├── Güz Dönemi
