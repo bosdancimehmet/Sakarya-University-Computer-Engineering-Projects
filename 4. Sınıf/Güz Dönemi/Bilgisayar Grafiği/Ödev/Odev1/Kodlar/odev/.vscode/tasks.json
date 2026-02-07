@@ -1,0 +1,39 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "BuildKlasoruOlustur",
+            "type": "shell",
+            "command": "powershell",
+            "args": ["-Command", "if (!(Test-Path Builds)) { mkdir Builds }"],
+            "options": { "cwd": "${workspaceFolder}/../.." },
+            "presentation": { "reveal": "silent" }
+        },
+        {
+            "label": "ProjeBuildKlasoruOlustur",
+            "type": "shell",
+            "command": "powershell",
+            "args": ["-Command", "if (!(Test-Path ${workspaceFolderBasename})) { mkdir ${workspaceFolderBasename} }"],
+            "options": { "cwd": "${workspaceFolder}/../../Builds" },
+            "dependsOn": ["BuildKlasoruOlustur"],
+            "presentation": { "reveal": "silent" }
+        },
+        {
+            "label": "CMakeBuild",
+            "type": "shell",
+            "command": "cmake",
+            "options": { "cwd": "${workspaceFolder}/../../Builds/${workspaceFolderBasename}" },
+            "args": ["-DCMAKE_BUILD_TYPE=Debug", "${workspaceFolder}", "-G", "Ninja"],
+            "dependsOn": ["ProjeBuildKlasoruOlustur"]
+        },
+        {
+            "label": "MakeBuild",
+            "type": "shell",
+            "command": "ninja",
+            "options": { "cwd": "${workspaceFolder}/../../Builds/${workspaceFolderBasename}" },
+            "group": { "kind": "build", "isDefault": true },
+            "dependsOn": ["CMakeBuild"],
+            "problemMatcher": "$gcc"
+        }
+    ]
+}

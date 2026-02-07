@@ -1,0 +1,3 @@
+C:/Users/mehme/Desktop/SAU/BilgisayarGrafigi/Odev1/Builds/odev/CMakeFiles/odev.dir
+C:/Users/mehme/Desktop/SAU/BilgisayarGrafigi/Odev1/Builds/odev/CMakeFiles/edit_cache.dir
+C:/Users/mehme/Desktop/SAU/BilgisayarGrafigi/Odev1/Builds/odev/CMakeFiles/rebuild_cache.dir

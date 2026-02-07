@@ -1,0 +1,85 @@
+FUNCTION_BLOCK IssizlikModeli
+
+// Girdi değişkenlerinin tanımlanması
+VAR_INPUT
+	gelir : REAL; // Aylık Hanehalkı Geliri (bin TL)
+	gider : REAL; // Aylık Hanehalkı Gideri (bin TL)
+	nufusSayisi : REAL; // Ülke Nüfusu (Milyon Kişi)
+END_VAR
+
+// Çıktı değişkeninin tanımlanması
+VAR_OUTPUT
+	issizlikOrani : REAL; // İşsizlik Oranı (%)
+END_VAR
+
+//Girdilerin Bulanıklaştırılması
+//-------------------------------------------------------------------
+//Gelir (bin TL) olarak alınmıştır
+//Referans: Açlık Sınırı (20.4k TL), Yoksulluk Sınırı (66.5k TL)
+FUZZIFY gelir
+	TERM dusuk := trape 0 0 20 30; // 20bin - 30bin TL
+	TERM orta := trian 25 50 70; // 25bin - 50bin - 70bin TL
+	TERM yuksek := trape 65 80 150 150; // 65bin - 80bin - 150bin TL
+END_FUZZIFY
+
+//Gider (bin TL) olarak alınmıştır
+// Referans: Yoksulluk Sınırı (66.5k TL)
+FUZZIFY gider
+	TERM dusuk := trape 0 0 30 65; // 30bin - 65bin TL
+	TERM yuksek := trape 60 80 150 150; // 60bin - 80bin - 150bin TL
+END_FUZZIFY
+
+//Nüfus Sayısı (Milyon Kişi) olarak alınmıştır
+//Referans: (0-20M Düşük, 15-100M Orta, 90M+ Yüksek)
+FUZZIFY nufusSayisi
+	TERM dusuk := trape 0 0 15 20; 
+	TERM orta := trape 15 20 90 100; 
+	TERM yuksek := trape 90 100 200 200; 
+END_FUZZIFY
+
+//Çıktının durulaştırılması
+//-------------------------------------------------------------------
+//İşsizlik Oranı (%) olarak alınmıştır
+// Referans: 2024 Ortalama İşsizlik Oranı (%8.7)
+DEFUZZIFY issizlikOrani
+	TERM cokaz := trape 0 0 4 6;
+	TERM az := trian 5 6.5 8;
+	TERM orta := trian 7.5 9 11; 
+	TERM yuksek := trian 10 12.5 15;
+	TERM cokyuksek := trape 14 17 25 25;
+	
+	METHOD : COG;
+	DEFAULT := 10;
+END_DEFUZZIFY
+
+//Kuralların tanımlanması
+RULEBLOCK kuralBlok
+	AND : MIN;
+	ACT : MIN;
+	ACCU : MAX;
+
+	//Gelirin DÜŞÜK olduğu durumlar
+	RULE 1: IF gelir IS dusuk AND gider IS dusuk AND nufusSayisi IS dusuk THEN issizlikOrani IS orta;
+	RULE 2: IF gelir IS dusuk AND gider IS dusuk AND nufusSayisi IS orta THEN issizlikOrani IS yuksek;
+	RULE 3: IF gelir IS dusuk AND gider IS dusuk AND nufusSayisi IS yuksek THEN issizlikOrani IS cokyuksek;
+	RULE 4: IF gelir IS dusuk AND gider IS yuksek AND nufusSayisi IS dusuk THEN issizlikOrani IS yuksek;
+	RULE 5: IF gelir IS dusuk AND gider IS yuksek AND nufusSayisi IS orta THEN issizlikOrani IS cokyuksek;
+	RULE 6: IF gelir IS dusuk AND gider IS yuksek AND nufusSayisi IS yuksek THEN issizlikOrani IS cokyuksek;//En kötü durum 
+	// Senaryo 2: Gelirin ORTA olduğu durumlar
+	RULE 7: IF gelir IS orta AND gider IS dusuk AND nufusSayisi IS dusuk THEN issizlikOrani IS az;
+	RULE 8: IF gelir IS orta AND gider IS dusuk AND nufusSayisi IS orta THEN issizlikOrani IS orta;
+	RULE 9: IF gelir IS orta AND gider IS dusuk AND nufusSayisi IS yuksek THEN issizlikOrani IS orta;
+	RULE 10: IF gelir IS orta AND gider IS yuksek AND nufusSayisi IS dusuk THEN issizlikOrani IS orta;
+	RULE 11: IF gelir IS orta AND gider IS yuksek AND nufusSayisi IS orta THEN issizlikOrani IS yuksek;
+	RULE 12: IF gelir IS orta AND gider IS yuksek AND nufusSayisi IS yuksek THEN issizlikOrani IS yuksek;
+	// Senaryo 3: Gelirin YÜKSEK olduğu durumlar
+	RULE 13: IF gelir IS yuksek AND gider IS dusuk AND nufusSayisi IS dusuk THEN issizlikOrani IS cokaz;//En iyi durum
+	RULE 14: IF gelir IS yuksek AND gider IS dusuk AND nufusSayisi IS orta THEN issizlikOrani IS az;
+	RULE 15: IF gelir IS yuksek AND gider IS dusuk AND nufusSayisi IS yuksek THEN issizlikOrani IS az;
+	RULE 16: IF gelir IS yuksek AND gider IS yuksek AND nufusSayisi IS dusuk THEN issizlikOrani IS az;
+	RULE 17: IF gelir IS yuksek AND gider IS yuksek AND nufusSayisi IS orta THEN issizlikOrani IS orta;
+	RULE 18: IF gelir IS yuksek AND gider IS yuksek AND nufusSayisi IS yuksek THEN issizlikOrani IS orta;
+
+END_RULEBLOCK
+
+END_FUNCTION_BLOCK

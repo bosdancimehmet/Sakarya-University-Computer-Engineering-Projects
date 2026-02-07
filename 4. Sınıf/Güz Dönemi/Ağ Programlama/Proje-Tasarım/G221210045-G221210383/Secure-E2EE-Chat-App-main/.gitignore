@@ -1,0 +1,15 @@
+# Sanal Ortam (Gereksiz kalabalık)
+venv/
+__pycache__/
+
+# Kullanıcı Anahtarları (GÜVENLİK RİSKİ - Asla yüklenmez)
+user_keys/
+*_key.json
+
+# IDE Ayarları
+.vscode/
+.idea/
+
+# Veritabanı dosyaları (SQLite kullanıyorsa diye, bizde gerek yok ama kalsın)
+*.db
+*.sqlite3

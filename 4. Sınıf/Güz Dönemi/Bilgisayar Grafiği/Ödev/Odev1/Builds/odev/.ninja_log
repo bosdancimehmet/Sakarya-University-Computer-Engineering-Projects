@@ -1,0 +1,18 @@
+# ninja log v7
+16	279	7868209829467104	CMakeFiles/odev.dir/src/vertexbuffer.cpp.obj	10a8e306d7666312
+19	1596	7868209829497101	CMakeFiles/odev.dir/src/vertexarrayobject.cpp.obj	22b2bfc182326609
+11	1743	7868209829417156	CMakeFiles/odev.dir/src/shaderfile.cpp.obj	5e03424c21d64e72
+9	1923	7868209829387142	CMakeFiles/odev.dir/src/glwindow.cpp.obj	7bdfedf88f0fcad3
+14	3427	7868209829437135	CMakeFiles/odev.dir/src/shaderprogram.cpp.obj	a93bccf1477fa88c
+8	1973	7868325193114808	CMakeFiles/odev.dir/src/main.cpp.obj	22c99ec047ccbc55
+7	4670	7868209829367105	CMakeFiles/odev.dir/src/glad.c.obj	7a6c836f3406ab5b
+1930	5767	7868209848721406	CMakeFiles/odev.dir/C_/Users/mehme/Desktop/SAU/BilgisayarGrafigi/Odev1/Kutuphaneler/imgui/backends/imgui_impl_glfw.cpp.obj	ed33d55ec1e13278
+3445	6332	7868209863752429	CMakeFiles/odev.dir/C_/Users/mehme/Desktop/SAU/BilgisayarGrafigi/Odev1/Kutuphaneler/imgui/backends/imgui_impl_opengl3.cpp.obj	ca6c071f771fda02
+25	7646	7868209829546071	CMakeFiles/odev.dir/src/texturemanager.cpp.obj	e5877521cd0e78b9
+1624	7814	7868209845595592	CMakeFiles/odev.dir/C_/Users/mehme/Desktop/SAU/BilgisayarGrafigi/Odev1/Kutuphaneler/imgui/imgui_tables.cpp.obj	2a7d901088e22a68
+293	10097	7868209832431764	CMakeFiles/odev.dir/C_/Users/mehme/Desktop/SAU/BilgisayarGrafigi/Odev1/Kutuphaneler/imgui/imgui_draw.cpp.obj	254511f3f2f136e1
+1751	11980	7868209846810834	CMakeFiles/odev.dir/C_/Users/mehme/Desktop/SAU/BilgisayarGrafigi/Odev1/Kutuphaneler/imgui/imgui_widgets.cpp.obj	4deae43f2271924e
+22	12044	7868209829527102	CMakeFiles/odev.dir/src/meshloader.cpp.obj	98e58c225415d48c
+27	13878	7868209829576156	CMakeFiles/odev.dir/C_/Users/mehme/Desktop/SAU/BilgisayarGrafigi/Odev1/Kutuphaneler/imgui/imgui.cpp.obj	b4c1e4a6c81fbde7
+9080	9472	7868325283831041	odev.exe	f020917bcbf6ce99
+11	9079	7868325193134868	CMakeFiles/odev.dir/src/scenemanager.cpp.obj	d6f28691b4fbe343

@@ -1,0 +1,11 @@
+{
+    "ModelName": "Pyramid",
+    "TextureName": "container.jpg",
+    "ShaderProgramName": "UnlitTexturedShader",
+    "MeshFile": "pyramid.mesh",
+    "IsBasicShape": false,
+    "ShapeType": "None",
+    "Position": [0.0, 0.0, 0.0],
+    "Scale": [1.0, 1.0, 1.0],
+    "Euler": [0.0, 0.0, 0.0]
+}
