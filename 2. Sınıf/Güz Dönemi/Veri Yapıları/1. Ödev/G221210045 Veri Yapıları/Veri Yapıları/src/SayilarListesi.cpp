@@ -112,14 +112,14 @@ void SayilarListesi::ortakYazdir(bool tersCevirilmis) {
 			
 			//yazdir(basamakadeti);
 			//
-			cout<<"###########"<<"   ";
+			cout<<"###############"<<"   ";
 			for(int i=0; i<basamakAdet;i++){
 			cout<<"*******"<<"   ";
 			}
 			cout<<endl;
 			//
 			
-            cout << "#" <<setw(9)<< tempDugum->sayi << "#" ;
+            cout << "#" <<setw(13)<< tempDugum->sayi << "#" ;
 			//
 			
 			if (tersCevirilmis) {
@@ -140,7 +140,7 @@ void SayilarListesi::ortakYazdir(bool tersCevirilmis) {
 			
 			//sekilYazdir(basamakAdet);
 			//
-			cout<<"#---------#"<<"   ";
+			cout<<"#-------------#"<<"   ";
 			for(int i=0; i<basamakAdet;i++){
 			cout<<"*******"<<"   ";
 			}
@@ -150,7 +150,7 @@ void SayilarListesi::ortakYazdir(bool tersCevirilmis) {
 			
 			tempDugum->sayi->yazdirSayi();
 			
-			cout <<right<<setw(10-tempDugum->sayi->basSayisi())<< "#";
+			cout <<right<<setw(14-tempDugum->sayi->basSayisi())<< "#";
 			
 			tempBasamak = tempDugum->sayi->getHead();
 			//
@@ -163,7 +163,7 @@ void SayilarListesi::ortakYazdir(bool tersCevirilmis) {
 			
             //sekilYazdir(basamakAdet);
 			//
-			cout<<"###########"<<"   ";
+			cout<<"###############"<<"   ";
 			for(int i=0; i<basamakAdet;i++){
 			cout<<"*******"<<"   ";
 			}
