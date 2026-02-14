@@ -58,6 +58,7 @@ int Stack::top(){
 		//cout<<root->data<<endl;
 		return root->data;
 	}	
+    return 0;
 }
 
 int Stack::toplamStack(){
