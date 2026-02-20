@@ -24,4 +24,5 @@ https://github.com/user-attachments/assets/9782fc34-3c10-4977-8058-5a73dc4512e6
 <img width="814" height="1233" alt="image" src="https://github.com/user-attachments/assets/b671ad14-ba68-45c7-a6fd-b04ba82956e3" />
 <br>
 **Örnek 2**
+<br>
 <img width="865" height="1319" alt="image" src="https://github.com/user-attachments/assets/4ea834c0-d179-42ea-a533-e8c56e500047" />
