@@ -25,10 +25,5 @@ Geliştiricilerin yazdığı Java kodlarının kalitesini ve dokümantasyon oran
 
 ## 📸 Ekran Görüntüleri
 <img width="856" height="493" alt="Ekran görüntüsü 2026-02-20 155015" src="https://github.com/user-attachments/assets/88b6e8c3-d95b-437a-8fa9-a37e12659560" />
-<img width="563" height="594" alt="Ekran görüntüsü 2026-02-14 175648" src="https://github.com/user-attachments/assets/363665a4-c59e-412d-aeb6-b7c32e63e619" />
-
-
-
-
-
+<img width="888" height="481" alt="Ekran görüntüsü 2026-02-20 155041" src="https://github.com/user-attachments/assets/c51721c9-3ed7-484f-8ad9-01db5ee9ff9a" />
 
