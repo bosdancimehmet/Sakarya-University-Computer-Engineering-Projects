@@ -17,3 +17,5 @@ Yüksek seviyeli kütüphaneler kullanmak yerine, doğrudan POSIX sistem çağr�
 ## 💻 Kullanılan Teknolojiler
 * **Dil:** C++
 * **Kavramlar:** Operating System Concepts, Virtual File Systems (VFS), POSIX System Calls, Metadata Management, Low-Level File I/O, Pointers & Memory Offset.
+
+**Not :** Detaylı ekran çıktıları ve tanıtımlar rapor dosyasında bulunmaktadır, inceleyebilirsiniz. 
