@@ -20,7 +20,7 @@ TCP/IP protokolü üzerinde çalışan çoklu istemci (multi-client) destekli bi
 ## 📸 Ekran Çıktıları ve Mimari Diyagramlar
 <img width="767" height="748" alt="Ekran görüntüsü 2026-02-21 164639" src="https://github.com/user-attachments/assets/46c8a485-948e-40af-81e3-fbd92e3fb183" />
 <br>
-## UNICAST Haberleşme
+## **UNICAST Haberleşme**
 <br>
 <img width="1483" height="859" alt="Ekran görüntüsü 2026-02-21 160553" src="https://github.com/user-attachments/assets/cc853ca3-d758-4f75-af66-711c68f04c10" />
 <img width="1484" height="862" alt="Ekran görüntüsü 2026-02-21 160608" src="https://github.com/user-attachments/assets/e2b6cc2a-8a82-4bb8-8e76-51d4f8f161f0" />
