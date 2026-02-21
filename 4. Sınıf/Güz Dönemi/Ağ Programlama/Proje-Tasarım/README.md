@@ -22,7 +22,6 @@ TCP/IP protokolü üzerinde çalışan çoklu istemci (multi-client) destekli bi
 <br>
 
 **UNICAST Haberleşme**
-
 <br>
 <img width="1483" height="859" alt="Ekran görüntüsü 2026-02-21 160553" src="https://github.com/user-attachments/assets/cc853ca3-d758-4f75-af66-711c68f04c10" />
 <img width="1484" height="862" alt="Ekran görüntüsü 2026-02-21 160608" src="https://github.com/user-attachments/assets/e2b6cc2a-8a82-4bb8-8e76-51d4f8f161f0" />
@@ -40,7 +39,6 @@ TCP/IP protokolü üzerinde çalışan çoklu istemci (multi-client) destekli bi
 <br>
 
 **BROADCAST Haberleşme**
-
 <br>
 <img width="1485" height="861" alt="Ekran görüntüsü 2026-02-21 162124" src="https://github.com/user-attachments/assets/1f45a960-f4a1-4638-acad-d74fd8f3513f" />
 <img width="1482" height="858" alt="Ekran görüntüsü 2026-02-21 162137" src="https://github.com/user-attachments/assets/a70b80ce-1e76-4c3c-a34d-f70f7d2036f3" />
@@ -51,7 +49,6 @@ TCP/IP protokolü üzerinde çalışan çoklu istemci (multi-client) destekli bi
 <br>
 
 **PostgreSQL Veri Tabanı Tabloları**
-
 <br>
 <img width="1533" height="557" alt="Ekran görüntüsü 2026-02-21 170032" src="https://github.com/user-attachments/assets/c0dbe307-596a-47e9-b35f-f33ba5d9b4fb" />
 <img width="1529" height="521" alt="Ekran görüntüsü 2026-02-21 163418" src="https://github.com/user-attachments/assets/40bdb82c-3426-40a2-8bf4-cc967fb04955" />
@@ -59,7 +56,6 @@ TCP/IP protokolü üzerinde çalışan çoklu istemci (multi-client) destekli bi
 <br>
 
 **WireShark Görseller**
-
 <br>
 <img width="1919" height="1018" alt="Ekran görüntüsü 2026-02-21 164147" src="https://github.com/user-attachments/assets/e09824c9-233e-4221-9d22-b739948c4a94" />
 <img width="1276" height="1016" alt="Ekran görüntüsü 2026-02-21 164205" src="https://github.com/user-attachments/assets/5db6ac83-f082-4696-9489-3f55de3ed8ce" />
