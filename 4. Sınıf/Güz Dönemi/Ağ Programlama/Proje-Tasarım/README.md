@@ -30,7 +30,6 @@ TCP/IP protokolü üzerinde çalışan çoklu istemci (multi-client) destekli bi
 
 **MULTICAST Haberleşme**
 <br>
-
 <img width="1481" height="860" alt="Ekran görüntüsü 2026-02-21 161148" src="https://github.com/user-attachments/assets/f57df3cf-bac3-4cb6-8b98-17a27e011aa3" />
 <img width="1480" height="861" alt="Ekran görüntüsü 2026-02-21 161202" src="https://github.com/user-attachments/assets/df981491-015f-4801-b078-09e17d3a5a88" />
 <img width="1481" height="860" alt="Ekran görüntüsü 2026-02-21 161221" src="https://github.com/user-attachments/assets/f2b097a8-419c-4574-b286-4b626bee4b08" />
